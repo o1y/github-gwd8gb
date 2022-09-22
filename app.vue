@@ -6,11 +6,12 @@ onMounted(() => {
   gsap.timeline({
     scrollTrigger: {
       trigger: section.value,
-      start: 'top bottom-=0%',
+      start: "top bottom-=0%",
     },
   });
 });
 </script>
+
 <template>
   <div ref="section">
     <NuxtWelcome />
@@ -19,3 +20,8 @@ onMounted(() => {
     <NuxtWelcome />
   </div>
 </template>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
